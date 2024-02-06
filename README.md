@@ -6,6 +6,7 @@ There has been significant progress in large models since the end of 2022, with 
 - `Chapter` tag is the main roadmap
 - `M` tag is for model explanation
 - `SP` tag is for special tech or trick
+- `Papers` contains read papers
 - `Others` massive undecided staff...
 
 ## Papers
