@@ -23,6 +23,26 @@ In fact, you can do this with GPT. This will give you a picture like a survey, h
 >- Core tech: Matrix factorization techniques on word co-occurrence matrices for word embeddings.
 >```
 
+**Prompt 3**
+
+>```
+>Give me a development roadmap of NLP with the following structure, try to split milestones as much as possible:
+># The development of NLP
+>## Era of xxx
+>-Introduction:
+>-Key techs that start this era:
+>-Models:
+>-Popular task:
+>-Focus:
+>-Industry or commercial demands:
+>-Industry solution:
+>-Challenges and industry expectation:
+>-Academic demands:
+>-Academic solution:
+>-Challenges and academic expectation:
+>-Limitations:
+>```
+
 **Prompt 2**
 
 List models mentioned in the survey and ask GPT to build the tree.
