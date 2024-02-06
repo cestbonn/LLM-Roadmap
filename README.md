@@ -14,5 +14,10 @@ There has been significant progress in large models since the end of 2022, with 
 ## Blogs
 1. xxx
 
+## Courses
+1. [CS234](https://stanford-cs324.github.io/winter2022/)
+2. [CS471/671](https://self-supervised.cs.jhu.edu/sp2023/)
+3. [CS597g](https://www.cs.princeton.edu/courses/archive/fall22/cos597G/)
+
 ## Others
 1. xxx
