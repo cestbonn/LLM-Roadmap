@@ -13,7 +13,7 @@ There has been significant progress in large models since the end of 2022, with 
 1. xxx
 
 ## Blogs
-1. xxx
+1. Huggingface courses
 
 ## Courses
 1. [CS224N](https://web.stanford.edu/class/cs224n/)
