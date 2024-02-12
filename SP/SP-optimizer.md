@@ -8,9 +8,12 @@ $$\nabla_{\theta} L(\theta) = \left[ \frac{\partial L}{\partial \theta_1}, \frac
 ## SGD
 update the weights linearly based on learning rate $\eta$.
 $$\theta_{t+1}=\theta_t-\eta \cdot g_t$$
+
 ## Adam
 $$\theta_{t+1} = \theta_t - \frac{\eta \cdot \hat{m}_t}{\sqrt{\hat{v}_t} + \epsilon}$$
+
 $$m_t=\beta_1\cdot m_{t-1}+(1-\beta_1)\cdot g_{t},\ \hat{m_t}=\frac{m_t}{1-\beta_1^t}$$
+
 $$v_t=\beta_2\cdot v_{t-1}+(1-\beta_2)\cdot g_t^2,\ \hat{v_t}=\frac{v_t}{1-\beta_2^t}$$
 
 To be more clear,
@@ -93,6 +96,16 @@ $$
 
 In this way, we discount the bias and make the estimation more accurate. As we can see, the bias is very apparent at the beginning of the iteration, where $m_1=(1-\beta_1^1)\mu$. With $t$ goes up, $1-\beta_1^t$ as well as bias decrease sharply.
 
+### take away
+I was confused by a question for a while, 
+
+>We calculate an ESTIMATION of the gradients' expectation and correct the bias to push it closer to the true expectation. HOWEVER, why don't we just use the true expectation with $m_t = \frac{1}{t}(m_{t-1} \cdot (t-1) + g_t)$?
+
+First, We use Exponential Weighted Moving Average (EWMA) only because its exponential weighting, which is more advantageous than the simple average, but not "the best try we could estimate the expectation".
+
+Second, the simple moving average indeed closer to true expectation since it is unbiased. However, we can also make EWMA unbiased, while the simple moving average do not have the weighting advantages.
+
+There are lots of estimator of expectation, but we care more about the instant value that affects the optimization progress. ADDITIONALLY, we can correct bias to make the estimator an unbiased estimator.
 
 
 
